@@ -9,7 +9,7 @@ public class Main {
         if(input.matches("\\s*([1-9]|10)\\s*(\\+|\\-|\\*|\\/)\\s*([1-9]|10)\\s*")) {
             result = calculateArabic(input);
         } else if(input.matches("\\s*(I|II|III|IV|V|VI|VII|VIII|IX|X)\\s*(\\+|\\-|\\*|\\/)\\s*(I|II|III|IV|V|VI|VII|VIII|IX|X)\\s*")) {
-            result = calculateRoman(input);// обрабатываем римскиое вырожение
+            result = calculateRoman(input);
         } else {
             throw new Exception();
         }
