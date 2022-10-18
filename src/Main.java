@@ -37,10 +37,10 @@ public class Main {
         String[] x = s.replace(" ", "").split("\\+|\\-|\\*|\\/");
         int a = NumberConverter.toArabic(x[0]);
         int b = NumberConverter.toArabic(x[1]);
-        if(a < b) throw new Exception();
         if(s.contains("+")){
             result = a + b;
         } else if (s.contains("-")) {
+            if(a < b) throw new Exception();
             result = a - b;
         } else if (s.contains("*")) {
             result = a * b;
